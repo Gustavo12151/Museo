@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Arte del MET</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Galería de Arte del MET</h1>
+    </header>
+
+    <div class="filter-section">
+        <h2>Filtrar por:</h2>
+        <label for="departmentSelect">Departamento:</label>
+        <select id="departmentSelect">
+            <!-- Las opciones se agregarán dinámicamente desde el JavaScript -->
+        </select>
+
+        <label for="keywordInput">Palabra clave:</label>
+        <input type="text" id="keywordInput" placeholder="Buscar por palabra clave...">
+
+        <label for="locationInput">Localización:</label>
+        <input type="text" id="locationInput" placeholder="Buscar por localización...">
+
+        <button id="fetchButton">Buscar</button>
+    </div>
+
+    <!-- Contenedor de los objetos en una grilla de 4 columnas -->
+    <ul id="objetosLista" class="grid-container"></ul>
+
+    <!-- Paginación inferior -->
+    <div id="pagination-bottom" class="pagination">
+        <button id="prevButton" disabled>Anterior</button>
+        <span id="paginationInfo"></span>
+        <button id="nextButton" disabled>Siguiente</button>
+    </div>
+
+    <!-- Scripts JS -->
+    <script src="scripts.js" defer></script>
+</body>
+</html>

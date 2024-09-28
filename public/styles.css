@@ -1,0 +1,97 @@
+/* Reset de márgenes y paddings para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Fondo suave para el cuerpo */
+}
+
+/* Estilos para el encabezado */
+header {
+    background: #333; /* Color de fondo oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Sección de filtros */
+.filter-section {
+    background: #fff; /* Fondo blanco para la sección de filtros */
+    padding: 20px;
+    margin: 20px auto; /* Centrar la sección */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    max-width: 600px; /* Ancho máximo */
+}
+
+/* Estilos de etiquetas y entradas */
+label {
+    display: block; /* Cada etiqueta en una nueva línea */
+    margin-bottom: 5px; /* Espacio inferior */
+}
+
+input[type="text"], select {
+    width: 100%; /* Ocupa todo el ancho */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 15px; /* Espacio inferior */
+    border: 1px solid #ccc; /* Bordes sutiles */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Estilo del botón */
+button {
+    padding: 10px 15px;
+    background: #007BFF; /* Color azul */
+    color: #fff; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor */
+}
+
+button:hover {
+    background: #0056b3; /* Color azul más oscuro al pasar el mouse */
+}
+
+/* Estilos de la paginación */
+.pagination {
+    text-align: center; /* Centrar contenido */
+    margin: 20px 0; /* Espacio vertical */
+}
+
+/* Estilo para la lista de objetos */
+.grid-container {
+    display: grid; /* Usar CSS Grid */
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 15px; /* Espacio entre tarjetas */
+    padding: 20px;
+}
+
+/* Estilo para cada tarjeta de objeto */
+.grid-container li {
+    background: #fff; /* Fondo blanco para cada tarjeta */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.2s; /* Transición suave */
+}
+
+.grid-container li:hover {
+    transform: scale(1.05); /* Aumentar tamaño al pasar el mouse */
+}
+
+/* Estilo para las imágenes en las tarjetas */
+.grid-container img {
+    max-width: 100%; /* Asegurar que la imagen no exceda el contenedor */
+    border-radius: 4px; /* Bordes redondeados en la imagen */
+}
+
+/* Estilo del texto en las tarjetas */
+.grid-container h3 {
+    margin: 10px 0; /* Espacio superior e inferior */
+}
